@@ -14,6 +14,7 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [2,4,6]
 ]
+#won?
 def won?(board)
   WIN_COMBINATIONS.each {|combo|
     index_0 = combo[0]
@@ -32,7 +33,7 @@ def won?(board)
   }
   return false
 end
-
+#full?
 def full?(board)
   if !board.any?{|input|input == " " }
     return true
@@ -40,6 +41,7 @@ def full?(board)
     return false
   end
 end
+#draw?
 def draw?(board)
   if won?(board) == true and full?(board) == false
     return false
