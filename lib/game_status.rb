@@ -35,6 +35,8 @@ end
 
 def full?(board)
   if !board.any?{|input|input == " " }
-  end
     return true
+  else
+    return false
+  end
 end
