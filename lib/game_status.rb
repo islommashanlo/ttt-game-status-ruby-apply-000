@@ -33,7 +33,7 @@ def won?(board)
   return false
 end
 
-def full_board?(board)
+def full?(board)
   if !board.any?{|input|input == " " }
   end
     return true
