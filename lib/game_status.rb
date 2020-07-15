@@ -34,7 +34,7 @@ def won?(board)
 end
 
 def full_board?(board)
-  if !board.any?{|input|input = " " }
+  if !board.any?{|input|input == " " }
   end
     return true
 end
