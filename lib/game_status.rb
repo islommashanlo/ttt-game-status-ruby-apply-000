@@ -15,13 +15,9 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 def won?(board)
-  if board.all? {|value| value == " "} or full_board(board)
-    return false
-  else
   WIN_COMBINATIONS.any?{|combo|
     combo.all?{|input|
         board[input] == "X" or board[input] == "O"
       }
-  end
   }
 end
